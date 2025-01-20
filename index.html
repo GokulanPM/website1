@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Boosan - Financial Calculators</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#calculators">Calculators</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Finance Boosan</h1>
+        <p>Your go-to platform for financial calculators and tools!</p>
+    </section>
+
+    <section id="calculators">
+        <h2>Financial Calculators</h2>
+        <div class="calculator-container">
+            <h3>Compound Interest Calculator</h3>
+            <label for="principal">Principal Amount:</label>
+            <input type="number" id="principal" placeholder="Enter principal">
+            <label for="rate">Interest Rate (%):</label>
+            <input type="number" id="rate" placeholder="Enter rate">
+            <label for="time">Time (Years):</label>
+            <input type="number" id="time" placeholder="Enter time">
+            <label for="frequency">Compounding Frequency:</label>
+            <input type="number" id="frequency" value="1">
+            <button onclick="calculateCompoundInterest()">Calculate</button>
+            <div id="ciResult"></div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Financial Articles</h2>
+        <p>Read our latest financial tips, investing strategies, and news!</p>
+        <!-- Add a list of blog posts here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <!-- Contact form -->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Finance Boosan. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
