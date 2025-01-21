@@ -1,54 +1,143 @@
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: #f0f8ff;
+    color: #333;
     text-align: center;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
+  }
+  
+  /* Header Styling */
+  h1 {
+    font-size: 3em;
     color: white;
-    text-decoration: none;
-}
-
-section {
+    background-color: #2a9d8f;
     padding: 20px;
-    margin: 20px;
-}
-
-.calculator-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-input, button {
+    margin: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Calculator Container */
+  .calculator-container {
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  /* SIP Calculator Background */
+  .sip {
+    background-color: #f9c74f;
+  }
+  
+  /* Inflation Calculator Background */
+  .inflation {
+    background-color: #90be6d;
+  }
+  
+  /* Compound Interest Calculator Background */
+  .compound-interest {
+    background-color: #f94144;
+    color: white;
+  }
+  
+  /* CAGR Calculator Background */
+  .cagr {
+    background-color: #277da1;
+    color: white;
+  }
+  
+  /* Lump Sum Calculator Background */
+  .lump-sum {
+    background-color: #6a4c93;
+    color: white;
+  }
+  
+  /* EMI Calculator Background */
+  .emi {
+    background-color: #f3722c;
+  }
+  
+  /* XIRR Calculator Background */
+  .xirr {
+    background-color: #43aa8b;
+    color: white;
+  }
+  
+  /* SWP Calculator Background */
+  .swp {
+    background-color: #f48c06;
+    color: white;
+  }
+  
+  /* Calculator Header */
+  h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Label Styling */
+  label {
+    font-size: 1em;
+    color: #333;
     margin: 10px 0;
-    padding: 8px;
+    display: block;
+  }
+  
+  /* Input Fields */
+  input {
+    padding: 12px;
+    margin: 10px 0;
     width: 100%;
-    box-sizing: border-box;
-}
-
-footer {
-    background-color: #333;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  input[type="number"]:focus {
+    outline: none;
+    border-color: #2a9d8f;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #2a9d8f;
     color: white;
-    text-align: center;
-    padding: 10px;
-}
+    font-size: 1.1em;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #264653;
+  }
+  
+  /* Results Styling */
+  p {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f1f1f1;
+    border-left: 8px solid #e76f51;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  p:hover {
+    background-color: #ffe4b5;
+  }
+  
