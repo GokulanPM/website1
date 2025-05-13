@@ -128,3 +128,30 @@ button:hover {
 .result:hover {
     background-color: #ffe4b5;
 }
+/* Result Container Styling */
+.result-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ffffffdd;
+  border-radius: 10px;
+  border: 2px dashed #2a9d8f;
+}
+
+.result-container h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #2a9d8f;
+}
+
+/* Result Paragraph */
+.result-container p {
+  background-color: #fff;
+  border-left: 5px solid #2a9d8f;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+}
+
