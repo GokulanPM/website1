@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Financial Calculators</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -14,128 +14,128 @@
   <div class="calculator-container sip">
     <h2>SIP Calculator</h2>
     <label for="sipAmount">SIP Amount:</label>
-    <input type="number" id="sipAmount" placeholder="Enter SIP Amount">
-    <br>
+    <input type="number" id="sipAmount" placeholder="Enter SIP Amount" />
     <label for="sipRateOfReturn">Rate of Return (in %):</label>
-    <input type="number" id="sipRateOfReturn" placeholder="Enter Rate of Return">
-    <br>
+    <input type="number" id="sipRateOfReturn" placeholder="Enter Rate of Return" />
     <label for="sipDuration">Duration (in years):</label>
-    <input type="number" id="sipDuration" placeholder="Enter Duration">
-    <br>
+    <input type="number" id="sipDuration" placeholder="Enter Duration" />
     <button onclick="calculateSIP()">Calculate SIP</button>
-    <p id="sipResult" class="result">Result will appear here</p>
+    <div class="result-container">
+      <h3>Result:</h3>
+      <p id="sipResult">Your SIP result will appear here.</p>
+    </div>
   </div>
 
   <!-- Inflation Calculator -->
   <div class="calculator-container inflation">
     <h2>Inflation Calculator</h2>
     <label for="inflationAmount">Current Amount:</label>
-    <input type="number" id="inflationAmount" placeholder="Enter Amount">
-    <br>
+    <input type="number" id="inflationAmount" placeholder="Enter Amount" />
     <label for="inflationRate">Inflation Rate (in %):</label>
-    <input type="number" id="inflationRate" placeholder="Enter Inflation Rate">
-    <br>
+    <input type="number" id="inflationRate" placeholder="Enter Inflation Rate" />
     <label for="inflationDuration">Duration (in years):</label>
-    <input type="number" id="inflationDuration" placeholder="Enter Duration">
-    <br>
+    <input type="number" id="inflationDuration" placeholder="Enter Duration" />
     <button onclick="calculateInflation()">Calculate Inflation</button>
-    <p id="inflationResult" class="result">Result will appear here</p>
+    <div class="result-container">
+      <h3>Result:</h3>
+      <p id="inflationResult">Future value will appear here.</p>
+    </div>
   </div>
 
   <!-- Compound Interest Calculator -->
   <div class="calculator-container compound-interest">
     <h2>Compound Interest Calculator</h2>
     <label for="principal">Principal Amount:</label>
-    <input type="number" id="principal" placeholder="Enter Principal Amount">
-    <br>
+    <input type="number" id="principal" placeholder="Enter Principal Amount" />
     <label for="compoundRate">Rate of Interest (in %):</label>
-    <input type="number" id="compoundRate" placeholder="Enter Rate of Interest">
-    <br>
+    <input type="number" id="compoundRate" placeholder="Enter Rate of Interest" />
     <label for="compoundDuration">Duration (in years):</label>
-    <input type="number" id="compoundDuration" placeholder="Enter Duration">
-    <br>
+    <input type="number" id="compoundDuration" placeholder="Enter Duration" />
     <button onclick="calculateCompoundInterest()">Calculate Compound Interest</button>
-    <p id="compoundResult" class="result">Result will appear here</p>
+    <div class="result-container">
+      <h3>Result:</h3>
+      <p id="compoundResult">Compound interest result will appear here.</p>
+    </div>
   </div>
 
   <!-- CAGR Calculator -->
   <div class="calculator-container cagr">
     <h2>CAGR Calculator</h2>
     <label for="initialValue">Initial Value:</label>
-    <input type="number" id="initialValue" placeholder="Enter Initial Value">
-    <br>
+    <input type="number" id="initialValue" placeholder="Enter Initial Value" />
     <label for="finalValue">Final Value:</label>
-    <input type="number" id="finalValue" placeholder="Enter Final Value">
-    <br>
+    <input type="number" id="finalValue" placeholder="Enter Final Value" />
     <label for="years">Duration (in years):</label>
-    <input type="number" id="years" placeholder="Enter Duration">
-    <br>
+    <input type="number" id="years" placeholder="Enter Duration" />
     <button onclick="calculateCAGR()">Calculate CAGR</button>
-    <p id="cagrResult" class="result">Result will appear here</p>
+    <div class="result-container">
+      <h3>Result:</h3>
+      <p id="cagrResult">CAGR result will appear here.</p>
+    </div>
   </div>
 
   <!-- Lump Sum Calculator -->
   <div class="calculator-container lump-sum">
     <h2>Lump Sum Calculator</h2>
     <label for="lumpSumAmount">Amount Invested:</label>
-    <input type="number" id="lumpSumAmount" placeholder="Enter Lump Sum Amount">
-    <br>
+    <input type="number" id="lumpSumAmount" placeholder="Enter Lump Sum Amount" />
     <label for="lumpSumRate">Rate of Return (in %):</label>
-    <input type="number" id="lumpSumRate" placeholder="Enter Rate of Return">
-    <br>
+    <input type="number" id="lumpSumRate" placeholder="Enter Rate of Return" />
     <label for="lumpSumYears">Duration (in years):</label>
-    <input type="number" id="lumpSumYears" placeholder="Enter Duration">
-    <br>
+    <input type="number" id="lumpSumYears" placeholder="Enter Duration" />
     <button onclick="calculateLumpSum()">Calculate Lump Sum</button>
-    <p id="lumpSumResult" class="result">Result will appear here</p>
+    <div class="result-container">
+      <h3>Result:</h3>
+      <p id="lumpSumResult">Future value will appear here.</p>
+    </div>
   </div>
 
   <!-- EMI Calculator -->
   <div class="calculator-container emi">
     <h2>EMI Calculator</h2>
     <label for="loanAmount">Loan Amount:</label>
-    <input type="number" id="loanAmount" placeholder="Enter Loan Amount">
-    <br>
+    <input type="number" id="loanAmount" placeholder="Enter Loan Amount" />
     <label for="loanInterest">Rate of Interest (in %):</label>
-    <input type="number" id="loanInterest" placeholder="Enter Rate of Interest">
-    <br>
+    <input type="number" id="loanInterest" placeholder="Enter Rate of Interest" />
     <label for="loanDuration">Loan Duration (in months):</label>
-    <input type="number" id="loanDuration" placeholder="Enter Duration">
-    <br>
+    <input type="number" id="loanDuration" placeholder="Enter Duration" />
     <button onclick="calculateEMI()">Calculate EMI</button>
-    <p id="emiResult" class="result">Result will appear here</p>
+    <div class="result-container">
+      <h3>Result:</h3>
+      <p id="emiResult">EMI result will appear here.</p>
+    </div>
   </div>
 
   <!-- XIRR Calculator -->
   <div class="calculator-container xirr">
     <h2>XIRR Calculator</h2>
     <label for="investmentAmounts">Investment Amounts (comma separated):</label>
-    <input type="text" id="investmentAmounts" placeholder="Enter Investment Amounts">
-    <br>
+    <input type="text" id="investmentAmounts" placeholder="Enter Investment Amounts" />
     <label for="investmentDates">Investment Dates (comma separated, YYYY-MM-DD):</label>
-    <input type="text" id="investmentDates" placeholder="Enter Investment Dates">
-    <br>
+    <input type="text" id="investmentDates" placeholder="Enter Investment Dates" />
     <label for="finalAmount">Final Amount:</label>
-    <input type="number" id="finalAmount" placeholder="Enter Final Amount">
-    <br>
+    <input type="number" id="finalAmount" placeholder="Enter Final Amount" />
     <button onclick="calculateXIRR()">Calculate XIRR</button>
-    <p id="xirrResult" class="result">Result will appear here</p>
+    <div class="result-container">
+      <h3>Result:</h3>
+      <p id="xirrResult">XIRR calculation result will appear here.</p>
+    </div>
   </div>
 
   <!-- SWP Calculator -->
   <div class="calculator-container swp">
     <h2>SWP Calculator</h2>
     <label for="swpAmount">Investment Amount:</label>
-    <input type="number" id="swpAmount" placeholder="Enter Investment Amount">
-    <br>
+    <input type="number" id="swpAmount" placeholder="Enter Investment Amount" />
     <label for="swpRate">Rate of Return (in %):</label>
-    <input type="number" id="swpRate" placeholder="Enter Rate of Return">
-    <br>
+    <input type="number" id="swpRate" placeholder="Enter Rate of Return" />
     <label for="swpDuration">Duration (in months):</label>
-    <input type="number" id="swpDuration" placeholder="Enter Duration">
-    <br>
+    <input type="number" id="swpDuration" placeholder="Enter Duration" />
     <button onclick="calculateSWP()">Calculate SWP</button>
-    <p id="swpResult" class="result">Result will appear here</p>
+    <div class="result-container">
+      <h3>Result:</h3>
+      <p id="swpResult">Monthly withdrawal will appear here.</p>
+    </div>
   </div>
 
   <script src="script.js"></script>
